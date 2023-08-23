@@ -40,8 +40,14 @@ List * createList()
   nueva_lista->current = NULL;
   return nueva_lista;
 }
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * list)
+{
+    if (list->head != NULL) {
+        list->current = list->head;
+        return list->current->data;
+    } else {
+        return NULL;
+    }
 }
 
 void * nextList(List * list) {
