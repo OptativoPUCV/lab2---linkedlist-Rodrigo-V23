@@ -76,15 +76,17 @@ void * lastList(List * list)
     return NULL;
   }
 }
-
 void * prevList(List * list)
 {
-    if (list->current != NULL && list->current->prev != NULL) {
-        list->current = list->current->prev;
-        return list->current->data;
-    } else {
-        return NULL;
-    }
+  if (list -> current != NULL && list -> current -> prev != NULL)
+  {
+    list -> current = list -> current -> prev;
+    return list -> current -> data;
+  }
+  else
+  {
+    return NULL;
+  }
 }
 
 void pushFront(List * list, void * data) {
