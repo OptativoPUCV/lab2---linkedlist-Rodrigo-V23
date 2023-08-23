@@ -28,9 +28,19 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList() {
-     return NULL;
+List * createList()
+{
+    List *newList = (List *)malloc(sizeof(List));
+    if (newList == NULL) {
+        perror("Error al crear lista");
+        exit(EXIT_FAILURE);
+    }
+    newList->head = NULL;
+    newList->tail = NULL;
+    newList->current = NULL;
+    return newList;
 }
+
 
 void * firstList(List * list) {
     return NULL;
