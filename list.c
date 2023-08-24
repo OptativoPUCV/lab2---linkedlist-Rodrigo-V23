@@ -132,7 +132,9 @@ void * popBack(List * list)
   return popCurrent(list);
 }
 void * popCurrent(List * list)
-
+{
+  return NULL;
+}
 void cleanList(List * list)
 {
   while (list->head != NULL)
