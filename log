@@ -111,3 +111,9 @@ list.c:58:14: error: expected ‘;’ before ‘:’ token
       |              ^
 Compilation failed
 51ac932
+Thu 24 Aug 2023 09:05:40 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+a010e52
