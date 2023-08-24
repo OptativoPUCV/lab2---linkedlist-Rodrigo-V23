@@ -41,16 +41,14 @@ List * createList()
 }
 void * firstList(List * list)
 {
-  if(list -> head && list)
+  if (list && list->head)
   {
-    list -> current = list -> head;
-    return list -> current -> data;
-  } 
-  else
-  {
-    return NULL;
+    list->current = list->head;
+    return list->current->data;
   }
+return NULL;
 }
+
 void * nextList(List * list)
 {
   if(list -> current != NULL && list -> current -> next != NULL)
