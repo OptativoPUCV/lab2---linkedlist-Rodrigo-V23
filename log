@@ -153,3 +153,9 @@ Thu 24 Aug 2023 09:13:30 PM UTC:
  tests:  10|2
 total_score: 45/70
 62cb2a1
+Thu 24 Aug 2023 09:14:20 PM UTC: 
+ list.c | 20 +++++++++++---------
+ 1 file changed, 11 insertions(+), 9 deletions(-)
+ tests:  10|2
+total_score: 45/70
+ebb7fec
