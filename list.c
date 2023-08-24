@@ -133,7 +133,7 @@ void * popBack(List * list)
 }
 void * popCurrent(List * list)
 {
-  if(list && list->current)
+  if(list->current != NULL)
   {
     void *data = list->current->data;
     Node *temp = list->current;
