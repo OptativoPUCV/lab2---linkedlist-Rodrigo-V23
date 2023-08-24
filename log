@@ -101,3 +101,13 @@ Thu 24 Aug 2023 09:04:34 PM UTC:
  tests:  9|3
 total_score: 35/70
 cef920f
+Thu 24 Aug 2023 09:05:34 PM UTC: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:58:14: error: expected ‘;’ before ‘:’ token
+   58 |   return NULL:
+      |              ^
+Compilation failed
+51ac932
