@@ -41,7 +41,7 @@ List * createList()
 }
 void * firstList(List * list)
 {
-  if (list && list->head)
+  if(list->head != NULL)
   {
     list->current = list->head;
     return list->current->data;
@@ -108,7 +108,7 @@ void pushCurrent(List * list, void * data)
     if(nuevo_nodo)
     {
       nuevo_nodo -> next = list -> current->next;
-      if (list -> current -> next)
+      if(list -> current -> next)
       {
         list -> current -> next->prev = nuevo_nodo;
       }
