@@ -46,7 +46,7 @@ void * firstList(List * list)
     list->current = list->head;
     return list->current->data;
   }
-return NULL;
+  return NULL;
 }
 void * nextList(List * list)
 {
@@ -64,10 +64,7 @@ void * lastList(List * list)
     list -> current = list -> tail;
     return list -> current -> data;
   }
-  else
-  {
-    return NULL;
-  }
+  return NULL;
 }
 void * prevList(List * list)
 {
